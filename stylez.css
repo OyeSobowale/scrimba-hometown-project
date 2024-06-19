@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'FamiljenGrotesk-Regular';
+    src: url('/fonts/FamiljenGrotesk-Regular.woff2') format('woff2'),
+         url('/fonts/FamiljenGrotesk-Regular.woff') format('woff'),
+         url('/fonts/FamiljenGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'FamiljenGrotesk-Medium';
+    src: url('/fonts/FamiljenGrotesk-Medium.woff2') format('woff2'),
+         url('/fonts/FamiljenGrotesk-Medium.woff') format('woff'),
+         url('/fonts/FamiljenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'FamiljenGrotesk-SemiBold';
+    src: url('/fonts/FamiljenGrotesk-SemiBold.woff2') format('woff2'),
+         url('/fonts/FamiljenGrotesk-SemiBold.woff') format('woff'),
+         url('/fonts/FamiljenGrotesk-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* KANDAWA HEADER */
+
+#headr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #333333;
+    padding: 24px 64px 40px 64px;
+}
+
+#headr #heroHeader {
+    font: 600 128px/1.1 'FamiljenGrotesk-SemiBold', sans-serif;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+#headr #heroParagraph {
+    font: 400 28px/1.4 Inter, sans-serif;
+    color: #333333;
+    text-align: end;
+    letter-spacing: -0.5px;
+    width: 700px;
+    height: fit-content;
+    margin: 0;
+    margin-top: 40px;
+}
+
+
+/* HERO IMAGE */
+
+#img1frame {
+    padding: 48px 64px 96px 64px;
+}
+
+#img1frame #img1 {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* TOP ACTIVITIES */
+
+#activities {
+    /* position: relative; */
+    height: fit-content;
+    color: #fff;
+    background-color: #0A0A0A;
+    /* background-image: url('texturebg.webp'); */
+    /* background-position: cover;     */
+    padding: 80px 144px 104px 144px;
+}
+
+#cardRow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+#svg1 {
+    height: 300px;
+    width: 5px;
+    margin-top: 40px;
+}
+
+#svg2 {
+    height: 300px;
+    width: 5px;
+    margin-top: 80px;
+}
+
+#activities h2 {
+    font: 500 48px/1.1 Inter Display, sans-serif;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.activityCard img {
+    width: 100%;
+    height: 205px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 4px #000;
+    margin-bottom: 24px;
+}
+
+.activityCard h3 {
+    font: 400 20px/1.1 Inter Display, sans-serif;
+    color: #f5f5f5;
+    margin-bottom: 12px;
+}
+
+.activityCard p {
+    font: 400 16px/1.5 Inter, sans-serif;
+    color: #a9a9a9;
+    margin: 0;
+}
+
+#activityCard1 img {
+    filter: grayscale(100%);
+    transition: all 0.1s ease-in-out;
+}
+
+#activityCard1:hover img {
+    filter: grayscale(0%);
+    /* box-shadow: 0px 4px 24px 0px rgba(255, 255, 255, 0.02), 0px 2px 16px 2px rgba(48, 37, 72, 0.50); */
+}
+
+#activityCard2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#activityCard2 img {
+    filter: grayscale(100%);
+    transition: all 0.1s ease-in-out;
+}
+
+#activityCard2:hover img {
+    filter: grayscale(0%);
+    /* box-shadow: 0px 4px 24px 0px rgba(255, 255, 255, 0.02), 0px 2px 16px 1px rgba(210, 155, 61, 0.25); */
+}
+
+#activityCard3 {
+    text-align: end;
+    margin-top: 80px;
+}
+
+#activityCard3 img {
+    filter: grayscale(100%);
+    transition: all 0.1s ease-in-out;
+}
+
+#activityCard3:hover img {
+    filter: grayscale(0%);
+    /* box-shadow: 0px 4px 24px 0px rgba(255, 255, 255, 0.02), 0px 2px 16px 1px rgba(240, 240, 240, 0.10); */
+}
+/* #activities #texture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: -80px;
+    left: -96px;
+    right: -96px;
+    bottom: -104px;
+} */
+
+
+/* GUIDE SECTION */
+
+#guideCard {
+    background-color: #005244;
+    text-align: center;
+    padding: 104px 112px;
+}
+
+#guideCard img {
+    width: 100%;
+    height: 674px;
+    object-fit: cover;
+    /* object-position: top -300px right 0; */
+    border-radius: 12px;
+    /* border: 1px solid #a9a9a9; */
+    box-shadow: 0px 8px 20px 4px rgba(0, 0, 0, 0.20), 0px 0px 32px 0px rgba(255, 255, 255, 0.20) inset, 0px 0px 120px 8px rgba(255, 255, 255, 0.04) inset;
+}
+
+#guideText h2 {
+    font: 500 32px/1.1 Inter Display, sans-serif;
+    color: #99e5d8;
+    margin: 0;
+    margin-bottom: 64px;
+}
+
+#guideText #quote {
+    font: 500 48px/1.1 FamiljenGrotesk-Medium, sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+#guideText #guideName {
+    font: 400 32px/1.1 Inter Display, sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    margin-bottom: 80px;
+}
